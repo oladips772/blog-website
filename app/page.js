@@ -12,7 +12,7 @@ export default function Home() {
     setBlogList(updatedBlogs);
   };
   return (
-    <div className="mt-8 max-w-[900px] mx-auto grid grid-cols-2 gap-4">
+    <div className="mt-8 max-w-[900px] mx-auto grid grid-cols-2 gap-4 mb-4">
       {blogList.map((blog) => (
         <div
           key={blog.id}
