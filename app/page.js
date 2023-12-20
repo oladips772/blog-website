@@ -2,15 +2,18 @@
 "use client";
 import Link from "next/link";
 import blogs from "@/lib/blogs";
+import { useState } from "react";
 
 export default function Home() {
-  const deleteBlog = (id) => {
-    blogs.filter((blog) => blog.id !== id);
-  };
+  const [blogList, setBlogList] = useState(blogs);
 
+  const deleteBlog = (id) => {
+    const updatedBlogs = blogList.filter((blog) => blog.id !== id);
+    setBlogList(updatedBlogs);
+  };
   return (
     <div className="mt-8 max-w-[900px] mx-auto grid grid-cols-2 gap-4">
-      {blogs.map((blog) => (
+      {blogList.map((blog) => (
         <div
           key={blog.id}
           className="p-4 rounded shadow flex flex-col items-start"
