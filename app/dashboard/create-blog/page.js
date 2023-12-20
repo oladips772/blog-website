@@ -1,6 +1,7 @@
 /** @format */
 "use client"
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 function page() {
   const [title, setTitle] = useState("");

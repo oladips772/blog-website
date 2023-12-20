@@ -10,7 +10,8 @@ function Header() {
       </Link>
       <div className="flex items-center space-x-3">
         <Link href="/create-blog">New Blog</Link>
-        <button>Sign in</button>
+        <Link href="/login">Sign in</Link>
+        <Link href="/register">Sign up</Link>
       </div>
     </div>
   );
