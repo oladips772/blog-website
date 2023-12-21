@@ -32,7 +32,7 @@ function page() {
                 Delete
               </button>
               <Link
-                href={`/blogs/${blog.id}`}
+                href={`/dashboard/blogs/${blog.id}`}
                 className="bg-green-600 text-white px-3 py-1 rounded uppercase text-[12px] font-[600]"
               >
                 View
